@@ -2,72 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name = "keywords" content="resume, cv, petrov">
-    <meta name = "description" content="Это Сайт-резюме мой">
-    <title>Сайт-резюме</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="imgs/diesel.jpeg" alt="" width="150">
-    <h1>Владилен Минин</h1>
-    <h3>Основатель одноисенного ютюб канала</h3>
-    <h3>Я люблю <em>заниматься спортом, путешествовать</em> и программировать</h3>
-    <h3>Список социальных сетей</h3>
-    <a href="google.com">Instagram</a> |
-    <a href="drom.ru">Telegram</a> |
-    <a href="youtube.com">Youtube</a>
-    <h3>Мои хобби</h3>
-    <ol>
-        <li>Спорт</li>
-        <li>Автомобили</li>
-        <li>Криптовалюта</li>
-        <li>Деньги</li>
-        <li>Программирование</li>
-    </ol>
-    <h3>Опыт работы</h3>
-    <table>
-        <thead>
+    <div class="container">
+        <div class="info">
+            <div>
+                <img src="avatar.png" alt="тут моё фото" class="avatar">
+            </div>
+            <div class="info-text">
+                <h1>Петров Павел4</h1>
+                <p>У меня жена, 2 дочери, собака и <strong>кошка</strong></p>
+                <p>Я люблю всех кошек</p>
+                <h4>Мои контакты</h4>
+                    <a href="+79086605330">телефон</a>
+                    |
+                    <a href="https://t.me/PahaP85">Telegram</a>            
+            </div>                
+        </div>
+
+
+
+
+        
+        <div class="card bg-yellow">
+            <h2>Мои хобби</h2>
+            <ol class="list">
+                <li>Майнинг</li>
+                <li>Машины</li>
+                <li>Кошки</li>
+            </ol>
+        </div>
+        
+
+        <div class="card bg-green">
+
+        <h2>Опыт работы</h2>
+        <table class="table">
             <tr>
-                <th>Название</th>
+                <th>Организация</th>
                 <th>Должность</th>
-                <th>Год</th>
+                <th>Годы работы</th>
             </tr>
-        </thead>
-        <tbody>
             <tr>
                 <td>ИАЗ</td>
-                <td>Программист</td>
+                <td>инженер-программист</td>
                 <td>2007-2024</td>
             </tr>
             <tr>
-                <td>RAZBORKA.IRK</td>
+                <td>Razborka.irk</td>
                 <td>Директор мира</td>
-                <td>2007-2020</td>
-            </tr>            
-            <tr>
-                <td>Крипта</td>
-                <td>Майнер</td>
-                <td>2017-2024</td>
-            </tr>                        
-        </tbody>
-    </table>
-    <h3>Связаться со мной</h3>
-    <form action="">
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id = "name">
+                <td>2010-2020</td>
+            </tr>    
+        </table>
         </div>
-        <div>
-            <label for="email">Ваше email:</label>
-            <input type="email" id = "email">
-        </div>
-        <label for="text">Ваше сообщение:</label>
-        <br>
-        <textarea name="Сообщение" id="text" cols="30" rows="10"></textarea>
-        <br>
-        <input type="submit" name="Отправить">
 
-    </form>
+        <div class="contact">
+            <h2>Связаться со мной</h2>
+            <form action="">
+                <div class="row">
+                <div class="form-group">
+                    <label for="name">Имя</label>
+                    <input type="text" id = "name" placeholder="Имя">
+                </div>
+                <div class="form-group">
+                    <label for="email">email</label>
+                    <input type="email" id = "email" placeholder="email">    
+                </div>
+                </div>
+                <div class="form-group">
+                    <label for="text">Сообщение</label>
+                    <textarea id = "text"></textarea>
+                </div>
+                <input type="submit" value="Связаться" class="btn">
+            </form>
+        </div>
+    </div>
+
+    <div class="position">
+        <div class="box"></div>    
+    </div>
 
 </body>
 </html>
